@@ -1,0 +1,1 @@
+web: gunicorn Skiptracing.wsgi --log-file -

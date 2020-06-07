@@ -1,0 +1,12 @@
+django
+dnspython
+Gunicorn
+django-crispy-forms
+django-bootstrap-form
+mongoengine
+django-heroku
+psycopg2
+whitenoise==2.0.6
+pytz
+requests
+dj_database_url
