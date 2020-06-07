@@ -3,7 +3,7 @@
 
 <!----- Page Title ----->
 {% block title %}
-Login - Customer Information Service Ahihi
+Login - Customer Information Service
 {% endblock %}
 
 
@@ -18,6 +18,8 @@ Login - Customer Information Service Ahihi
         {% for key, value in form.errors.items %}
             {{value}}
         {% endfor %}
+        
+        <h1>Skiptracing</h1>
             <ul>
                 <li><input type="text" id="username" name = "username" placeholder="User name" autocomplete="off" required="required" />{{form.username}}</li>
                 <li><input type="password" id="password" name = "password" placeholder="Password" required="required" /></li>
