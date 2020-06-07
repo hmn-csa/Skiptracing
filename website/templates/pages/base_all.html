@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   {% load static %}
+   <link rel="stylesheet" href="/redirect?Id=bPkSKQqMZ9erlLi6p21Q4A%3d%3d" static 'css/bootstrap.min.css' %}" type="text/css">
+   <link rel="shortcut icon" href="{% static 'image/logo.png' %}" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+   <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+   <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div id = "page-content">
+    <div id="header">
+        <div id ="nav">
+            <div class = "left"><img src="{% static 'image/logo.png' %}" alt="logo"/></div>
+            <div class ="right">
+                <div class = "title">Customer Information Service</div>
+                <div class = "user">
+                    <ul>
+                        <li style="display:inline">Welcome {{user}}</li>
+                        <li>|</li>
+                        <li style="display:inline"><a href="">Change Password</a></li>
+                        <li>|</li>
+                        <li style="display:inline"><a href="/">Log out</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       {% block content %}
+      
+       {% endblock %}
+       {% include "pages/jvscript.html" %}
+
+</div>
+</body>
+</html>

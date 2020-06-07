@@ -1,0 +1,35 @@
+{% extends "pages/base_all.html" %}
+
+
+<!----- Page Title ----->
+{% block title %}
+Search - Customer Information Service
+{% endblock %}
+
+
+
+<!----- Page Content --->
+
+{% block content %}
+<div id = "content">
+	<div id = "content-m">
+    		
+        	<form action="" method="post"  class="frm-c">
+            {% csrf_token %}
+            {% for key, value in form.errors.items %}
+                {{value}}
+            {% endfor %}
+            <div class="tb">{{status}}</div>
+             <input type="text" id="input" name="input" autocomplete="off" placeholder="Search...."><p>
+              <input type="radio" id="ID no" name="option" value="ID no" checked="checked">
+              <label for="ID no">ID number</label><p>
+              <input type="radio" id="Phone no" name="option" value="Phone no">
+              <label for="Phone no">Phone number</label><p>       
+            </form> 
+            
+    </div>
+</div>
+{% include "pages/jvscript.html" %}
+{% endblock %}
+
+

@@ -1,0 +1,755 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding: 0;
+	margin: 0;
+	font-family:Tahoma, Geneva, sans-serif;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+body a{
+	text-decoration: none;
+	display: block;
+	color:#000;
+}
+body li{
+	list-style-type: none;
+}
+body ul{
+	margin: 0;
+	padding: 0;
+}
+
+/*========= Trang Login ============ */
+#page-content{
+	width:100%;
+	height:100%;
+	margin:0;
+	position:relative;
+}
+
+.login-banner{
+	width: 300px;
+	height: 80px;
+	margin-left:-250px;
+	margin-top:150px;
+	position:absolute;
+	border-radius:10px;
+}
+.login-banner-head{
+	width:100px;
+	height:95%;
+	float:left;
+	
+}
+.login-banner-head img{
+	width:100%;
+	height:100%;
+}
+.login-banner-content{
+	width:190px;
+	height:95%;
+	font-weight:bolder;
+	margin:auto;
+	margin-top:2.5%;
+	line-height:60px;
+	float:right;
+	color:#093e52;
+	font-size:20px;
+}
+.g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+	float:left;
+}
+#frm-login{
+	width: 450px;
+	height: auto;
+	margin:auto;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-top:20vh;
+	display:none;
+	position:relative;
+}
+
+#frm-login form{
+	width: 400px;
+	height: auto;
+	margin: auto;
+	margin-top:30px;
+}
+#frm-login ul{
+	width: 100%;
+	height: 250px;
+	padding: 0;
+	margin: auto;
+	margin-top:20px;
+}
+#frm-login li{
+	width:100% ;
+	height: auto;
+	list-style-type: none;
+	margin-bottom:20px;
+}
+
+#frm-login label{
+	width: 100%;
+	font-size: 14px;
+	color:#093e52;
+	font-weight:bolder;
+}
+
+#frm-login input{
+  width: 100%;
+  height:40px;
+  box-sizing: border-box;
+  table-layout:none;
+  border:none;
+  border-bottom:#000 1px solid;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size:auto;
+  padding: 12px 20px 12px 45px;
+}
+#frm-login input[type = "text"]{
+	background-image:url("../image/icon-user2.5e97e6151513.png");
+}
+#frm-login input[type = "password"]{
+	background-image:url("../image/icon-pass2.b3d2d80e7b9c.png");
+}
+#frm-login input:focus{
+	border:none;
+	outline:none;
+	border-bottom:#000 1px solid;
+
+}
+.tb{
+	width:100%;
+	height:auto;
+	margin:auto;
+	text-align:center;
+	color:#900;
+	font-size:12px;
+	font-style:italic;
+}
+#frm-login button{
+	width: 80px;
+	height: 50px;
+	background:#093e52;
+	color: #FFF;
+	border: none;
+	font-weight: bolder;
+	border-radius: 5px;
+	cursor: pointer;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+}
+#frm-login button:hover{
+	box-shadow: 1px 1px 5px 1px #666;
+}
+
+
+#header{
+	width:100%;
+	height: 50px;
+	box-shadow: 5px 2px 5px #CCC;
+	background-color:#FFF;
+	z-index:99;
+}
+#nav {
+	width:90%;
+	min-width:1300px;
+	height:50px;
+	margin:auto;
+	position:relative;
+}
+.line{
+	width:100%;
+	height:2px;
+	margin-top:10px;
+	border-bottom:1px double #000;
+	clear:both;
+}
+.left{
+	width:20%;
+	height:100%;
+	position:inherit;
+	float:left;
+	margin:auto;
+
+}
+.left img{
+	width: auto;
+	height: 50px;
+	margin:auto;
+
+}
+.right{
+	width:80%;
+	height:100%;
+	position:inherit;
+	float:right;
+
+}
+.title{
+	width:70%;
+	height:100%;
+	position:inherit;
+	float:left;
+	text-align: center;
+	font-weight:bolder;
+	font-size:30px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#093e52;
+	line-height:40px;
+
+}
+.user{
+	width:30%;
+	height:100%;
+	float:right;
+	line-height:80px;	
+}
+.user li{
+	display:inline-block;
+	float:left;
+	margin-left:5px;
+}
+.user li:last-child {
+	border:none;
+}
+
+#content{	
+	width:100%;
+	height:auto;
+	position:absolute;
+}
+#content-m{
+	width:1300px;
+	height:auto;
+	margin:auto;
+	position:relative;
+	margin-top:100px;
+}
+#content-l{
+	width:300px;
+	height:auto;
+	margin:auto;
+	float:left;
+	box-shadow: 2px 2px 5px #CCC;
+	border-radius:5px;
+	position:relative;
+
+}
+#content-r{
+	width:980px;
+	height:auto;
+	min-height:500px;
+	margin:auto;
+	float:right;
+	box-shadow: 2px 2px 5px #CCC;
+	border-radius:5px;
+	margin-bottom:20px;
+	position:relative;
+
+}
+#content-r-menu{
+	width:100%;
+	height:auto;
+	top:0;
+}
+#content-r-cont{
+	width:100%;
+	height:auto;
+}
+.frm-c{
+	width:60%;
+	height:auto;
+	margin:auto;
+	margin-top:10px;
+}
+.frm-c input[type="text"] {
+		height: 50px;
+		width: 90%;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 10px;
+		font-size: 25px;
+		font-family: Tahoma;
+		background-color: white;
+		background-image:url("../image/searchicon.591052a4b5cf.png");
+		background-position: right;
+		background-repeat: no-repeat;
+		padding: 12px 30px 12px 30px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+		margin-top:20px;
+		
+}
+.frm-c input[type="radio"] {
+		font-family: Tahoma;
+		font-size:20px;
+		margin-top:10px;
+		
+}
+.frm-c input[type="text"]:hover {
+		width:100%;		
+}
+.frm-c label:hover {
+		cursor:pointer;		
+}
+#content-l form{
+	width:80%;
+	height:auto;
+	margin:auto;
+	margin-top:50px;
+}
+#content-l input[type="text"] {
+		height: 40px;
+		width: 90%;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 15px;
+		font-family: Tahoma;
+		background-color: white;
+		background-image:url("../image/searchicon2.b41d2693d270.png");
+		background-position: right;
+		background-repeat: no-repeat;
+		padding: 12px 12px 12px 25px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+		
+}
+#content-l input[type="radio"] {
+		font-family: Tahoma;
+		font-size:15px;
+		margin-top:0;
+}
+#content-l label:hover {
+		cursor:pointer;
+}
+#menu{
+	width: 100%;
+	height: auto;
+	background-color:#3ac;
+}
+#menu ul{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 0;
+	z-index: 999;
+}
+#menu li{
+	list-style-type: none;
+	display: inline-block;
+	width: auto;
+	height: 40px;
+	text-align: center; 
+	background-color:#3ac;
+	margin-bottom:5px;
+
+}
+.active{
+	background-color:#090;
+	box-shadow: 2px 2px 5px #000;
+}
+
+#menu a{
+	text-decoration: none;
+	line-height: 40px;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bolder;
+	font-family:Tahoma;
+	display: block;
+	padding:0px 15px 0px 15px;
+	
+}
+#menu li:hover{
+	/*box-shadow: 0px -2px 5px 1px silver;*/
+	box-shadow: 2px 2px 5px #000;
+	cursor: pointer
+	
+}
+#menu li a:hover{
+	color:#FF0;
+}
+#menu .sub-menu{
+	width:258px;
+	background: #000000;
+	display: none;
+	margin-top:-10px;
+	position: absolute;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#menu .sub-menu ul{
+	padding: 0;
+	margin: 0;
+	height: auto;
+	width:100%;
+	
+}
+#menu .sub-menu li{
+	margin:0;
+	border: none !important;
+	height: 50px;
+	width: 100%;
+	background:none !important;
+	display: list-item;
+	text-align: left;
+}
+#menu .sub-menu a{
+	margin-left: 5px;
+	
+}
+#menu .sub-menu li:hover{
+	background: #FFFFFF !important;
+}
+#menu .sub-menu li:hover a{
+	color:#067613;
+}
+#menu li:hover .sub-menu{
+	display: block;
+	z-index: 999 !important;
+}
+#menu-res{
+	display: none;
+}
+.menu-res-content{
+	display: none;
+}
+#line-menu{
+	width: 100%;
+	height: 5px;
+	background:#067613;
+}
+#footer{
+	width: 100%;
+	height: 100px;
+}
+#footer-content{
+	width: 1300px;
+	height: 100%;
+	margin:auto;
+	text-align:center;
+	line-height:50px;
+	position:relative;
+	box-shadow: 0px -5px 10px 0px #CCC;
+}
+#footer-content img{
+	width: 100px;
+	height: 40px;
+}
+#cont-r{
+	width:100%;
+	height:auto;
+}
+
+.frm-search{
+	width:90%;
+	height:auto;
+	margin:auto;
+	margin-top:20px;
+}
+.frm-search input[type="text"] {
+		height: 60px;
+		width: 90%;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 25px;
+		font-family: Tahoma;
+		background-color: white;
+		background-image:url("../image/searchicon2.b41d2693d270.png");
+		background-position: right;
+		background-repeat: no-repeat;
+		padding: 12px 12px 12px 25px;
+		margin-top:30px;
+	/*	-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;*/
+		
+}
+
+	
+/*========== Trang Network graph=============*/
+#chart_div{
+	margin-top:20px;
+}
+
+/*========= Trang Geo location==============*/
+#map{
+	width:600px;
+	height:450px;
+	margin:auto;
+	margin-top:30px;
+}
+	
+/*============ Trang Overview ==============*/
+.left-r{
+	width:900px;
+	height:100px;
+	float:left;
+}
+.left-r img{
+	width:auto;
+	height:50px;
+	float:left;
+	margin-left:30px;
+}
+.right-r{
+	width:30%;
+	height:100px;
+	float:right;
+}
+.right-r img{
+	width:30px;
+	height:30px;
+	float:right;
+	margin-right:30px;
+	margin-top:10px;
+}
+.right-r img:hover{
+	cursor:pointer;
+}
+.nav-search{
+	width:700px;
+	height:100%;
+	margin:auto;
+	float:right;
+}
+.nav-search form{
+	width:600px;
+	height:100%;
+	margin:auto;
+}
+.nav-search p{
+	text-align:center;
+}
+
+.nav-search input[type = "text"]{
+	width:200px;
+	height:10px;
+	border-radius:40px;
+	border:1px solid #CCC;
+	padding:10px 25px 10px 25px ;
+	font-size:14px;
+	background-color: white;
+	background-image:url("../image/icon-phone.c50ff266fa96.png");
+	background-position: right;
+	background-repeat: no-repeat;
+	margin-top:10px;
+}
+.nav-search input[type = "text"]:last-child{
+	background-image:url("../image/icon-card.dc10e0403e32.png");
+	margin-left:10px;
+}
+
+.nav-search input[type = "text"]:hover{
+	box-shadow: 2px 2px 10px #CCC;
+}
+
+.nav-search input[type = "text"]:focus{
+	outline:none;
+	
+}
+
+.nav-search label{
+	margin-right:50px;
+	font-size:14px;
+}
+#content-result-left{
+	width:100%;
+	height:auto;
+	min-height:500px;
+}
+#menu-content{
+	width:150px;
+	height:auto;
+	float:left;
+	position:relative;
+	font-size:12px;
+}
+#menu-content a{
+	color:#FFF;
+	padding-left:10px;
+}
+#menu-content ul{
+	width:100%;
+	height:auto;
+	margin-top:200px;
+}
+#menu-content li{
+	width:85%;
+	height:40px;
+	line-height:40px;
+	background:#093e52;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	color:#FFF;
+	margin-bottom:10px;
+
+}
+#menu-content li:hover{
+	width:100%;
+	cursor:pointer;
+	box-shadow: 2px 2px 10px #000;
+}
+.active{
+	background:#900;
+}
+#content-result-right{
+	width:auto;
+	height:100%;
+	min-width:300px;
+	min-height:500px;
+	float:left;
+	margin-left:20px;
+	display:none;
+}
+#content-result-right h1{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	font-weight:bolder;
+	color:#666;
+}	
+#content-result-right h1:first-child{
+	margin-top:100px;
+}
+#content-result{
+	width:80%;
+	height:auto;
+	min-width:1200px;
+	min-height:800px;
+	float:left;
+	position:relative;
+}
+#content-show{
+	width:100%;
+	height:auto;
+	position:absolute;
+	margin-left:3%;
+}
+.tab-id-card{
+ 	width:30%;
+	height:auto;
+	min-height:100px;
+	margin:20px 0 20px 0;
+	margin-left:3%;
+	border:2px solid #09C;
+	border-radius:20px;
+
+}
+.tb-sum{
+	width:100%;
+	height:auto;
+	border:none;
+	font-weight:normal;
+	border-collapse: collapse;
+	font-size:14px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.r{
+	text-align:center;
+	color:#900;
+	font-weight:bolder;
+}
+.tb-sum th{
+	color:#FFF;
+	background-color:#093e52;
+	padding:5px;
+	
+}
+.tb-sum td{
+	width:auto;
+	min-width:80px;
+	border:none;
+	padding:5px 10px 5px 10px;
+}
+.record2{
+	background-color:#F3F3F3;
+	border:none;
+}
+#area{
+	width:30%;
+	height:auto;
+	min-height:500px;
+	float:left;
+	margin-left:3%;
+}
+
+#area:first-child{
+	margin-left:0;
+}
+.tab-detail{
+	width:100%;
+	height:auto;
+	min-height:50px;
+	border:1px solid #09C;
+	margin-bottom:10px;
+	
+}
+.tab-title{
+	color:#FFF;
+	background:#09C;
+	width:98%;
+	height:30px;
+	line-height:30px;
+	padding-left:2%;
+	font-size:12px;
+}
+.tb-detail{
+	width:100%;
+	height:auto;
+	border:none;
+	font-weight:normal;
+	border-collapse: collapse;
+	font-size:12.5px;
+}
+.tb-detail td{
+	width:auto;
+	max-width:80px;
+	padding:5px;
+
+}
+.c {
+	color:#900;
+	font-weight:bolder;
+}
+
+.backtop{
+	width: 40px;
+	height: 40px;
+	background:#FFF;
+	bottom: 0;
+	right:0;
+	position: fixed;
+	z-index: 999;
+	opacity: 0.7;
+	margin-bottom: 60px;
+	margin-right: 30px;
+	cursor: pointer;
+	display:none;
+}
+.backtop img {
+	width:40px;
+	height:40px;
+}
+@media only screen and (max-width: 1279px){
+
+	#container{
+		width: 100%;
+		height:105vh;
+		position: relative;
+	}
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   {% load static %}
+   <link rel="stylesheet" href="/redirect?Id=bPkSKQqMZ9erlLi6p21Q4A%3d%3d" static 'css/bootstrap.min.css' %}" type="text/css">
+   <link rel="shortcut icon" href="{% static 'image/logo.png' %}" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+   <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div id = "page-content">
+    <div id="header">
+            <div class = "left-r">
+            	<a href = "/"><img src="{% static 'image/logo.png' %}" alt="logo"/> </a>
+                <div class = "nav-search">
+                    <form action="/search/view" method="post">
+                        {% csrf_token %}
+                        {% for key, value in form.errors.items %}
+                            {{value}}
+                        {% endfor %}
+                         <button type="submit" id="btn" name="btnlogin" hidden = "hidden">Login</button>
+                         <input type="text" id="inputphone" name="inputphone" autocomplete="off" placeholder="Input Phone Number">
+                         <input type="text" id="inputcard" name="inputcard" autocomplete="off" placeholder="Input ID Card">
+                        
+                    </form> 
+                </div>
+            </div>
+            <div class ="right-r">
+				<img src="{% static 'image/icon-user.png' %}" alt="user"/>
+            </div>
+    </div>
+    
+       {% block content %}
+      
+       {% endblock %}
+       <div class="backtop"><img src={% static 'image/icon-backtotop.png' %} alt="backtotop"></div>
+	{% include "pages/jvscript.html" %}
+</div>
+</body>
+</html>

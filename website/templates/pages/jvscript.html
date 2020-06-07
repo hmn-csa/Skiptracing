@@ -1,0 +1,56 @@
+<script language="javascript">
+	$(document).ready(function() {
+		$('#frm-login').fadeIn("slow");
+
+				
+		$('#customer').click(function(e) {
+            e.preventDefault();
+			$('#content-show').load('/customer');
+			
+        });
+		$('#graph').click(function(e) {
+            e.preventDefault();
+            $('#content-show').load('/graph');
+        });
+		$('#geo').click(function(e) {
+            e.preventDefault();
+            $('#content-show').load('/geo');
+        });
+		$('#score').click(function(e) {
+            e.preventDefault();
+            $('#content-show').load('/score');
+        });
+		
+	//=================================================	
+		$('#logout').click(function(e) {
+            e.preventDefault();
+			window.location = "login";
+        });
+		
+	//=======================================
+		$('#menu-content li a').click(function(e) {
+            e.preventDefault();
+			$('#menu-content li a').removeClass("active");
+			$(this).addClass("active");
+        });
+		
+	//=======================================
+		$('.backtop').on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop : 0
+		},300);
+	});
+	
+	//=======================================
+	$(window).scroll(function(){
+			if($(window).scrollTop() - $("#header").position().top <= 0){
+				$('.backtop').css({'display':'none'});
+				$('#header').css({'position':''});
+			}else{
+				$('.backtop').css({'display':'block'});
+				$('#header').css({'position':'fixed'});
+			}
+		});
+    });
+</script>

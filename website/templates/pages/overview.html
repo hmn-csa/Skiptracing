@@ -1,0 +1,55 @@
+{% extends "pages/base_result.html" %}
+
+
+<!----- Page Title ----->
+{% block title %}
+Search - Customer Information Service
+{% endblock %}
+
+
+
+<!----- Page Content --->
+
+{% block content %}
+<div id = "content">
+    <div id = "menu-content" >
+        <ul>
+            <li id="customer" ><a href="#" class="active">Customer Details</a></li>
+            <li id="graph"><a href="#">Graph Relation</a></li>
+            <li id="score"><a href="#">Score Card</a></li>
+            <li id="geo"><a href="#">Geo Location</a></li>
+        </ul>
+    </div>
+    <div id = "content-result">
+    	<div class = "tab-id-card">
+        	<table class="tb-sum">
+            	<tr>
+                    <td colspan="2" class="r">{{data.ID_NO}}</td>
+                </tr>
+                <tr>
+                	<td>Full Name</td>
+                    <td>Nguyễn Minh Nhựt</td>
+                </tr>
+                <tr>
+                	<td>Birthday</td>
+                    <td>06-06-1994</td>
+                </tr>
+                <tr>
+                	<td>Gender</td>
+                    <td>{{data.GENDER}}</td>
+                </tr>
+                <tr >
+                	<td>Address</td>
+                    <td>18 Trịnh Đình Trọng, P. Phú Trung, Q.Tân Phú, Tp. Hồ Chí Minh</td>
+                </tr>
+            </table>
+        </div>
+        <div id = "content-show">
+            {% include "pages/customer.html" %}
+		</div>
+    </div> 
+</div>
+
+{% endblock %}
+
+
